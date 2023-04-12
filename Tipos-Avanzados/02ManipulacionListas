@@ -1,0 +1,14 @@
+mascotas = ["perro", "gato", "loro"]
+print(mascotas[0])
+print(mascotas[1])
+print(mascotas[2])
+print(mascotas[:3])
+print(mascotas[2:])
+print(mascotas[0::2])
+mascotas[0] = "mono"
+print(mascotas)
+
+
+numeros = list(range(21))
+print(numeros[::2])  # Pares
+print(numeros[1::2])  # Impares
