@@ -1,0 +1,29 @@
+print("Ingreso a la calculadora ")
+print("Para salir escriba 'salir'")
+print("Operaciones de suma, resta, multiplicacion, division y potencia")
+
+operaciones_validas = ["suma", "resta",
+                       "multiplicacion", "division", "potencia"]
+operacion = ""
+while operacion.lower() not in operaciones_validas:
+    operacion = input("Ingrese la operacion que desea realizar: ")
+    if operacion.lower() == "salir":
+        break
+
+if operacion.lower() != "salir":
+    n1 = float(input("Ingrese el primer numero: "))
+    n2 = float(input("Ingrese el segundo numero: "))
+    if operacion.lower() == "suma":
+        resultado = n1 + n2
+    elif operacion.lower() == "resta":
+        resultado = n1 - n2
+    elif operacion.lower() == "multiplicacion":
+        resultado = n1 * n2
+    elif operacion.lower() == "division":
+        resultado = n1 / n2
+    elif operacion.lower() == "potencia":
+        resultado = n1 ** n2
+    else:
+        print("Operacion no valida.")
+    print(f"El resultado es {resultado}")
+print("Hasta luego!")
