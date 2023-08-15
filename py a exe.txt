@@ -1,0 +1,5 @@
+cd C:\Users\TakeshiMechanics\Desktop
+
+pyinstaller --onefile KeyGen1.py
+
+C:\Users\TakeshiMechanics\Desktop\dist\KeyGen1.exe
